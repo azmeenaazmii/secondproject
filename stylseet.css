@@ -1,0 +1,83 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fffaf5;
+}
+
+.hero {
+    height: 600px;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600");
+
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 55px;
+    font-weight: bold;
+}
+
+.hero p {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.section-title {
+    color: #b83220;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.menu-section {
+    background-color: #fff0e5;
+}
+
+.food-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.food-card:hover {
+    transform: translateY(-10px);
+}
+
+.food-card img {
+    height: 230px;
+    object-fit: cover;
+}
+
+.food-card h5 {
+    color: #b83220;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #212529;
+    color: white;
+    padding: 20px;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.navbar-brand {
+    color: #ffc107 
+}

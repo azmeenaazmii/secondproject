@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="stylseet.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">🍽 TastyBite</a>
+
+        <button class="navbar-toggler" type="button"* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #17202a;
+  background: #eaeded;
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  min-height: 70px;
+  padding: 12px 4%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: white;
+  background: #131921;
+}
+
+.logo {
+  color: white;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.logo span {
+  color: #ffb84d;
+}
+
+.location,
+.account {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  white-space: nowrap;
+}
+
+.location small,
+.account small {
+  color: #d5d9d9;
+  font-size: 12px;
+}
+
+.search {
+  height: 40px;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.search select,
+.search input,
+.search button {
+  border: 0;
+  font-size: 15px;
+}
+
+.search select {
+  padding: 0 8px;
+  background: #e6e6e6;
+}
+
+.search input {
+  width: 100%;
+  min-width: 60px;
+  padding: 0 12px;
+}
+
+.search button {
+  width: 48px;
+  background: #febd69;
+  cursor: pointer;
+}
+
+.cart {
+  white-space: nowrap;
+}
+
+.nav {
+  min-height: 42px;
+  padding: 0 4%;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  background: #232f3e;
+}
+
+.nav a {
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.hero {
+  min-height: 280px;
+  margin: 20px auto;
+  padding: 36px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(110deg, #d9f1f3, #f8dfc3);
+}
+
+.hero p {
+  color: #37475a;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  margin: 10px 0 22px;
+  font-size: clamp(34px, 5vw, 58px);
+}
+
+.shop-button {
+  display: inline-block;
+  padding: 12px 20px;
+  border-radius: 5px;
+  color: #17202a;
+  background: #febd69;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero-art {
+  font-size: clamp(50px, 9vw, 110px);
+}
+
+.products-section {
+  padding: 10px 4% 35px;
+}
+
+.products-section h2 {
+  margin-bottom: 18px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.product-card {
+  padding: 18px;
+  background: white;
+  border-radius: 5px;
+}
+
+.product-image {
+  height: 150px;
+  display: grid;
+  place-items: center;
+  background: #f5f6f6;
+  font-size: 72px;
+}
+
+.product-card h3 {
+  margin-bottom: 8px;
+  font-size: 17px;
+}
+
+.price {
+  color: #b12704;
+  font-size: 19px;
+  font-weight: bold;
+}
+
+.product-card button {
+  width: 100%;
+  padding: 10px;
+  border: 0;
+  border-radius: 20px;
+  background: #ffd814;
+  cursor: pointer;
+}
+
+.product-card button:hover,
+.shop-button:hover {
+  background: #f7ca00;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background: #232f3e;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .topbar {
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .search {
+    order: 2;
+    flex-basis: 100%;
+  }
+
+  .nav {
+    gap: 16px;
+    overflow-x: auto;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    white-space: nowrap;
+  }
+
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 450px) {
+  .location {
+    display: none;
+  }
+
+  .hero {
+    min-height: 230px;
+    padding: 25px 6%;
+  }
+
+  .hero-art {
+    font-size: 42px;
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+        data-bs-toggle="collapse" data-bs-target="#menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="#menu-section">Menu</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<section id="home" class="hero">
+    <div class="container text-center">
+        <h1>Delicious Food, Happy Life!</h1>
+        <p>Experience the taste of happiness with every bite.</p>
+        <a href="#menu-section" class="btn btn-warning btn-lg">
+            Explore Menu
+        </a>
+    </div>
+</section>
+
+<section id="about" class="container py-5">
+    <div class="row align-items-center">
+        <div class="col-md-6">
+            <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?w=800"
+            class="img-fluid rounded shadow" alt="Restaurant food">
+        </div>
+
+        <div class="col-md-6">
+            <h2 class="section-title">About Our Restaurant</h2>
+            <p>
+                Welcome to TastyBite! We serve delicious, fresh and
+                quality food prepared with love. Our goal is to make
+                every meal a wonderful experience.
+            </p>
+            <p>Fresh Ingredients | Great Taste | Happy Customers</p>
+        </div>
+    </div>
+</section>
+<section id="menu-section" class="menu-section py-5">
+    <div class="container text-center">
+        <h2 class="section-title">Our Special Menu</h2>
+        <p>Discover our most popular dishes</p>
+
+        <div class="row g-4 mt-3">
+
+            <div class="col-md-4">
+                <div class="card food-card">
+                    <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=800"
+                    class="card-img-top" alt="Burger">
+                    <div class="card-body">
+                        <h4>Cheese Burger</h4>
+                        <p>Fresh and delicious cheesy burger.</p>
+                        <h5>₹149</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card food-card">
+                    <img src="https://images.unsplash.com/photo-1579751626657-72bc17010498?w=800"
+                    class="card-img-top" alt="Pizza">
+                    <div class="card-body">
+                        <h4>Italian Pizza</h4>
+                        <p>Hot pizza with cheese and toppings.</p>
+                        <h5>₹249</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="card food-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7xojB3cxwH899semHf3tPZ66nV3FvkKScFThBIiqOWX_PB2gpv2p5CEZw&s=10"
+                  class="card-img-top" alt="biryani">
+                    <div class="card-body">
+                        <h4>Chicken Biryani</h4>
+                        <p>Authentic flavourful chicken biryani.</p>
+                        <h5>₹199</h5>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="container py-5 text-center">
+    <h2 class="section-title">Contact Us</h2>
+    <p>We would love to hear from you!</p>
+
+    <p>Kasaragod, Kerala <br> new bus stand</p>
+    <p> +9048899504</p>
+    <p>✉️ tastybite@gmail.com</p>
+</section>
+</body>
+</html>
+
+    
+</body>
+</html>
